@@ -1,0 +1,54 @@
+{
+  "name": "@zynocode/sdk",
+  "version": "2.0.2",
+  "description": "Official TypeScript SDK for Zynocode Labs REST Tool Platform and AI Agent utilities",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build",
+    "test": "node test/smoke.mjs"
+  },
+  "sideEffects": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zynocode/zynocode-labs-free-tools.git",
+    "directory": "packages/sdk"
+  },
+  "homepage": "https://labs.zynocode.com/developers/sdk",
+  "bugs": {
+    "url": "https://github.com/zynocode/zynocode-labs-free-tools/issues"
+  },
+  "keywords": [
+    "zynocode",
+    "sdk",
+    "api-client",
+    "calculators",
+    "developer-tools",
+    "seo-tools",
+    "text-tools",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

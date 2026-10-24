@@ -1,0 +1,61 @@
+{
+  "name": "zynocode",
+  "version": "1.0.1",
+  "description": "Official Zynocode Labs CLI — Execute 76+ tools from your terminal, or serve as an MCP server for AI agents.",
+  "bin": {
+    "zynocode": "./dist/index.js"
+  },
+  "main": "./dist/sdk/index.js",
+  "types": "./dist/sdk/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/sdk/index.js",
+      "types": "./dist/sdk/index.d.ts"
+    },
+    "./sdk": {
+      "import": "./dist/sdk/index.js",
+      "types": "./dist/sdk/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "test": "node test/smoke.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zynocode/zynocode-labs-free-tools.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://labs.zynocode.com/developers/cli",
+  "bugs": {
+    "url": "https://github.com/zynocode/zynocode-labs-free-tools/issues"
+  },
+  "keywords": [
+    "zynocode",
+    "mcp",
+    "ai-tools",
+    "cli",
+    "model-context-protocol",
+    "developer-tools",
+    "pdf-tools",
+    "json-formatter",
+    "image-tools"
+  ],
+  "author": "Zynocode Labs",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

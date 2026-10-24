@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: [packages/sdk, packages/cli]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: ${{ matrix.package }}/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ${{ matrix.package }}
+
+      - name: Build package
+        run: npm run build
+        working-directory: ${{ matrix.package }}
+
+      - name: Run tests
+        run: npm test
+        working-directory: ${{ matrix.package }}

@@ -11,6 +11,7 @@ This repository is a showcase and index of the tools. The tools themselves live 
 
 ## Contents
 
+- [Developer Packages](#developer-packages)
 - [Free Online PDF Tools](#free-online-pdf-tools) (5)
 - [Free Online Image Tools](#free-online-image-tools) (8)
 - [Free SEO Tools](#free-seo-tools) (8)
@@ -20,6 +21,33 @@ This repository is a showcase and index of the tools. The tools themselves live 
 - [Free Online Utilities](#free-online-utilities) (5)
 - [Guides](#guides)
 - [Privacy](#privacy)
+
+## Developer Packages
+
+Official open-source client libraries and terminal tools for interacting with the [Zynocode Labs API](https://labs.zynocode.com/developers/api-reference):
+
+| Package | Install | Documentation | Source |
+|---|---|---|---|
+| **[@zynocode/sdk](https://www.npmjs.com/package/@zynocode/sdk)** | `npm install @zynocode/sdk` | [TypeScript SDK Guide](https://labs.zynocode.com/developers/sdk) | [`packages/sdk`](packages/sdk) |
+| **[zynocode](https://www.npmjs.com/package/zynocode)** | `npm install -g zynocode` | [CLI Reference](https://labs.zynocode.com/developers/cli) | [`packages/cli`](packages/cli) |
+
+### Additional Developer Resources
+
+- [REST API Reference](https://labs.zynocode.com/developers/api-reference) — HTTP endpoints, request/response models, and error codes
+- [Model Context Protocol (MCP)](https://labs.zynocode.com/developers/mcp) — Claude Desktop and Cursor integration via stdio and HTTP
+- [Webhooks Guide](https://labs.zynocode.com/developers/webhooks) — Event notifications and HMAC-SHA256 signature verification
+
+### Repository Structure
+
+```
+zynocode-labs-free-tools/
+├── packages/
+│   ├── sdk/    # @zynocode/sdk source (TypeScript API client)
+│   └── cli/    # zynocode source (Terminal CLI & MCP server)
+├── docs/       # Showcase screenshots and visual assets
+├── LICENSE     # Repository documentation & assets license (CC BY 4.0)
+└── README.md   # Showcase catalog and developer package index
+```
 
 ## Free Online PDF Tools
 
@@ -155,16 +183,25 @@ This repository is a showcase and index of the tools. The tools themselves live 
 Practical guides from the [Zynocode Labs blog](https://labs.zynocode.com/guides):
 
 - [Bcrypt Password Hashing Explained: Cost Factors, Salts & Architecture](https://labs.zynocode.com/guides/bcrypt-password-hashing-explained)
+- [bcrypt vs Argon2id vs scrypt: Which Password Hashing Algorithm Should You Use?](https://labs.zynocode.com/guides/bcrypt-vs-argon2-vs-scrypt)
+- [Credit Card Interest in India: How It Is Calculated and the Minimum Due Trap](https://labs.zynocode.com/guides/credit-card-interest-minimum-due)
+- [FD vs RD: Which Earns More Interest and When Should You Choose Each?](https://labs.zynocode.com/guides/fd-vs-rd-which-is-better)
 - [Flesch Reading Ease Explained: Formulas, Score Meaning & Charts](https://labs.zynocode.com/guides/readability-score-flesch-kincaid-explained)
+- [GST on Services in India: Current Slabs, SAC Codes & Invoicing Rules](https://labs.zynocode.com/guides/gst-on-services-india)
+- [Home Loan Prepayment: Should You Reduce EMI or Loan Tenure?](https://labs.zynocode.com/guides/home-loan-prepayment-reduce-emi-or-tenure)
+- [How to Calculate Loan EMI: Mathematical Formula & Worked Example](https://labs.zynocode.com/guides/how-to-calculate-emi)
 - [How to Calculate Net Worth: The Complete Step-by-Step Guide](https://labs.zynocode.com/guides/how-to-calculate-net-worth)
+- [JWT Structure Explained: Header, Payload, Signature & Security Rules](https://labs.zynocode.com/guides/jwt-structure-explained)
 - [Listen to Text: How to Proofread Writing and Study by Ear](https://labs.zynocode.com/guides/free-online-text-reader-guide)
 - [Markdown Cheat Sheet: Syntax, Tables, and Live Preview Guide](https://labs.zynocode.com/guides/markdown-cheat-sheet-preview)
+- [MD5 vs SHA-256: Differences, Collision Vulnerabilities & Modern Security Rules](https://labs.zynocode.com/guides/md5-vs-sha256)
 - [Meta Description Length Guide: Ideal Characters, Pixels & High-CTR Templates](https://labs.zynocode.com/guides/google-serp-preview-meta-description-guide)
 - [Passive Voice Examples: How to Spot and Convert Passive Sentences](https://labs.zynocode.com/guides/passive-voice-checker-examples)
 - [Photo and Signature Size for Online Forms: Requirements and Compression Guide](https://labs.zynocode.com/guides/compress-photo-signature-for-online-forms)
 - [Robots.txt Guide: Syntax Rules, Best Practices, and 10 Working Examples](https://labs.zynocode.com/guides/robots-txt-guide-examples)
 - [SEO Title Tag Length Guide: How to Craft Click-Worthy Google Titles](https://labs.zynocode.com/guides/seo-title-tag-length-guide)
 - [UTM Parameters Guide: How to Track Campaigns in Google Analytics 4](https://labs.zynocode.com/guides/utm-parameters-guide-ga4)
+- [UUID v4 vs UUID v7: Which Unique Identifier Should You Use for Database Keys?](https://labs.zynocode.com/guides/uuid-v4-vs-v7)
 - [What Is Keyword Density? Complete Formula, Examples & SEO Guide](https://labs.zynocode.com/guides/what-is-keyword-density)
 
 ## Privacy
@@ -173,8 +210,8 @@ Most tools process your files and text in your browser, so they aren't uploaded 
 
 ## Feedback
 
-Found a bug or want a new tool? [Open an issue](https://github.com/zynocode/free-online-tools/issues) or use the [contact page](https://labs.zynocode.com/contact).
+Found a bug or want a new tool? [Open an issue](https://github.com/zynocode/zynocode-labs-free-tools/issues) or use the [contact page](https://labs.zynocode.com/contact).
 
 ## License
 
-The content of this repository (README and screenshots) is licensed under [CC BY 4.0](LICENSE). The Zynocode Labs website and its source code are not part of this repository.
+The documentation and screenshots in this repository are licensed under [CC BY 4.0](LICENSE). The packages in `packages/` are each licensed under the [MIT License](packages/sdk/LICENSE). The Zynocode Labs website and its proprietary web application source code are not part of this repository.
