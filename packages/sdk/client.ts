@@ -132,6 +132,7 @@ export class ZynocodeClient {
     const headers: Record<string, string> = {
       "Content-Type": "application/json",
       Accept: "application/json",
+      "User-Agent": "zynocode-sdk/2.0.2",
       ...customHeaders,
     };
 
