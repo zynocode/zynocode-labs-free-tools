@@ -2,6 +2,30 @@
 
 Release notes for [Zynocode Labs](https://labs.zynocode.com). The full history is also at https://labs.zynocode.com/changelog.
 
+## v2.17.0 — 2026-11-04
+
+### Features
+
+- Transfer ownership of a workspace to another member, with a full workspace overview
+- Download a copy of your personal data from Account, protected by a fresh sign-in check
+- API keys can now be limited to specific scopes, given an expiry date and rotated without downtime, and each key shows its own usage
+- Get an email reminder before an API key expires
+- Backup codes for two-factor authentication and a default workspace in your profile
+- Projects and collections now open into their own detail pages
+
+### Fixes
+
+- Buttons that did nothing now work or have been removed
+- The GitHub icon and Open Source card in the footer link to the public free-tools repository
+- Long addresses on invoice PDFs now wrap instead of being cut off
+- Your profile no longer exposes secret values to the page
+- Fixed a database connection pool issue that could slow requests under load
+
+### Security
+
+- Removed an old two-factor route that is no longer needed
+- Turned off verbose authentication debug logging in production
+
 ## v2.16.0 — 2026-11-02
 
 ### Breaking changes
