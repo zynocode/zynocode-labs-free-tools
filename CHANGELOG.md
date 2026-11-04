@@ -2,6 +2,18 @@
 
 Release notes for [Zynocode Labs](https://labs.zynocode.com). The full history is also at https://labs.zynocode.com/changelog.
 
+## v2.17.1 — 2026-11-04
+
+### Features
+
+- Every account section now has its own page in the main menu: Profile, Security, Sessions, Notifications, Preferences, Workspace, Billing, API Keys, AI Integrations, Privacy & Data and Activity
+- Security and Sessions are separate pages, so you can review signed-in devices without opening password and two-factor settings
+
+### Fixes
+
+- Removed the second tab menu inside the Account Center page that repeated the main menu
+- Old account links, including those in earlier emails and notifications, still open the right page
+
 ## v2.17.0 — 2026-11-04
 
 ### Features
