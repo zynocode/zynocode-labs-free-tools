@@ -2,6 +2,12 @@
 
 Release notes for [Zynocode Labs](https://labs.zynocode.com). The full history is also at https://labs.zynocode.com/changelog.
 
+## v2.17.2 — 2026-11-04
+
+### Security
+
+- Sign-in checks are now stricter: every session must belong to a signed-in device, and leftover testing exceptions have been removed from the sign-in code
+
 ## v2.17.1 — 2026-11-04
 
 ### Features
